@@ -18,13 +18,15 @@ export const InfoList = ({ list, current }: InfoListProps) => {
       </CurrentIp>
       <div>
         <h2>History</h2>
-        {list.map((info) => (
-          <IpInfo
-            key={info.ip}
-            info={info}
-            isCurrent={current?.ip === info.ip}
-          />
-        ))}
+        {list.length
+          ? list.map((info) => (
+              <IpInfo
+                key={info.ip}
+                info={info}
+                isCurrent={current?.ip === info.ip}
+              />
+            ))
+          : "Now history is empty"}
       </div>
     </WrapperList>
   );
