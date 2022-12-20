@@ -1,7 +1,7 @@
-import { IIpInfo } from "../../../types/interfaces";
+import { IIpInfo } from "../../types/interfaces";
 import { useState } from "react";
-import { getInfo } from "../../../services/dataProvider";
-import { LSProvider } from "../../../services/localStorageProvider";
+import { getInfo } from "../../services/dataProvider";
+import { LSProvider } from "../../services/localStorageProvider";
 
 export const useUpdateInfo = (info: IIpInfo) => {
   const [updatedInfo, setUpdatedInfo] = useState(info);

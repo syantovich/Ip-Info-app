@@ -7,7 +7,7 @@ import {
   RefreshWrapper,
   InfoAreas,
 } from "./styles";
-import { useUpdateInfo } from "../hooks/useUpdateInfo";
+import { useUpdateInfo } from "../../hooks/useUpdateInfo";
 
 export const IpInfo = ({ info, isCurrent }: IpInfoProps) => {
   const {

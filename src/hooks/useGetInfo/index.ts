@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { IIp, IIpInfo } from "../../../types/interfaces";
-import { getInfo, getIp } from "../../../services/dataProvider";
-import { LSProvider } from "../../../services/localStorageProvider";
+import { IIpInfo } from "../../types/interfaces";
+import { getInfo, getIp } from "../../services/dataProvider";
+import { LSProvider } from "../../services/localStorageProvider";
 
 const useGetInfo = () => {
   const [currentIpInfo, setCurrentIpInfo] = useState<IIpInfo | null>(null);

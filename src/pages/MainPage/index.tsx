@@ -1,6 +1,6 @@
 import { InfoList } from "../../components/InfoList";
 import { ContainerMainPage } from "./styles";
-import useGetInfo from "../../components/hooks/useGetInfo";
+import useGetInfo from "../../hooks/useGetInfo";
 
 const MainPage = () => {
   const { ipSInfo, currentIpInfo } = useGetInfo();
